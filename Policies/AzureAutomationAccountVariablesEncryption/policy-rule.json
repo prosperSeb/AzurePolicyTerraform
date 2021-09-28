@@ -1,0 +1,18 @@
+{
+        "if": {
+            "allOf": [
+            {
+              "field": "type",
+              "equals": "Microsoft.Automation/automationAccounts/variables"
+            },
+            {
+              "field": "Microsoft.Automation/automationAccounts/variables/isEncrypted",
+              "notEquals": "true"
+        }
+      ]
+    },
+    "then": {
+      "effect": "Audit"
+    }
+    
+}
