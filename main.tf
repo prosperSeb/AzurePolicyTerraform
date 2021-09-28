@@ -15,6 +15,6 @@ resource "azurerm_policy_definition" "policy" {
   policy_type = "Custom"
   mode = "Indexed"
   display_name = " Audit Automation Account Variable Encrypion"
-  policy_rule = file(".\Policies\AzureAutomationAccountVariablesEncryption\policy-rule.json")
-  parameters = file(.\"Policies\AzureAutomationAccountVariablesEncryption\policy-parameters.json")
+  policy_rule = file(".\\policies\\azureAutomationAccountVariablesEncryption\\policy-rule.json")
+  parameters = file(".\\policies\\azureAutomationAccountVariablesEncryption\\policy-parameters.json")
 }
