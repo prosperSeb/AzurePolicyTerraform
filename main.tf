@@ -1,7 +1,7 @@
 # Configure the Azure provider
 terraform {
   required_providers {
-    azurerm = "2.65"
+    azurerm = "2.188.1"
   }
 }
 
